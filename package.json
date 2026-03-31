@@ -14,9 +14,16 @@
     "predict": "ts-node src/cli/predict.ts",
     "schedule": "ts-node src/cli/schedule.ts",
     "monitor": "ts-node src/cli/monitor.ts",
+    "secure-status": "ts-node src/cli/secure-status.ts",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:security": "jest test/security.test.ts",
     "lint": "eslint src/**/*.ts",
-    "typecheck": "tsc --noEmit"
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "typecheck": "tsc --noEmit",
+    "security-audit": "npm audit --audit-level=moderate",
+    "security-check": "npm run security-audit && npm run lint && npm run typecheck"
   },
   "keywords": [
     "claude",
@@ -36,17 +43,19 @@
     "dotenv": "^16.3.0",
     "luxon": "^3.4.0",
     "node-cron": "^3.0.0",
-    "winston": "^3.11.0"
+    "winston": "^3.11.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
     "@types/luxon": "^3.4.0",
     "@types/node": "^20.0.0",
     "@types/node-cron": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^8.0.0",
     "jest": "^29.5.0",
+    "minimatch": "^9.0.7",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.0",
     "typescript": "^5.0.0"
