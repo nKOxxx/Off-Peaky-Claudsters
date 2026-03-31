@@ -1,0 +1,65 @@
+{
+  "name": "off-peaky-claude",
+  "version": "1.0.0",
+  "description": "Claude API peak/off-peak tracker with scheduling and alerts",
+  "main": "dist/index.js",
+  "bin": {
+    "off-peaky": "bin/off-peaky.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "status": "ts-node src/cli/status.ts",
+    "predict": "ts-node src/cli/predict.ts",
+    "schedule": "ts-node src/cli/schedule.ts",
+    "monitor": "ts-node src/cli/monitor.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude",
+    "api",
+    "peak",
+    "off-peak",
+    "scheduler",
+    "optimization",
+    "automation"
+  ],
+  "author": "nKOxxx",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.0.0",
+    "cron": "^3.1.0",
+    "dotenv": "^16.3.0",
+    "luxon": "^3.4.0",
+    "node-cron": "^3.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/luxon": "^3.4.0",
+    "@types/node": "^20.0.0",
+    "@types/node-cron": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nKOxxx/Off-Peaky-Claude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nKOxxx/Off-Peaky-Claude/issues"
+  },
+  "homepage": "https://github.com/nKOxxx/Off-Peaky-Claude#readme"
+}
