@@ -1,4 +1,4 @@
-# 🕐 Off-Peaky Claude
+# 🕐 Off-Peaky Claudsters
 
 Claude API peak/off-peak tracker with scheduling and alerts
 
@@ -34,8 +34,8 @@ Optimize your Claude API usage by tracking peak and off-peak windows, allowing y
 
 ```bash
 # Clone the repository
-git clone https://github.com/nKOxxx/Off-Peaky-Claude.git
-cd Off-Peaky-Claude
+git clone https://github.com/nKOxxx/Off-Peaky-Claudsters.git
+cd Off-Peaky-Claudsters
 
 # Install dependencies
 npm install
@@ -90,7 +90,7 @@ npm run monitor
 
 ### Example Output
 ```
-🕐 Off-Peaky Claude Status
+🕐 Off-Peaky Claudsters Status
 ─────────────────────────
 Current Time: 2024-03-31 14:45:30 EDT
 Current Status: ⚡ PEAK HOURS
@@ -104,7 +104,7 @@ Duration: 14 hours (until 09:00 tomorrow)
 ## 🏗️ Architecture
 
 ```
-Off-Peaky-Claude/
+Off-Peaky-Claudsters/
 ├── src/
 │   ├── tracker/           # Peak detection logic
 │   ├── scheduler/         # Task scheduling
@@ -148,4 +148,4 @@ npm run build
 
 ## 📝 License
 
-MIT © Off-Peaky Claude
+MIT © Off-Peaky Claudsters

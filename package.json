@@ -1,5 +1,5 @@
 {
-  "name": "off-peaky-claude",
+  "name": "off-peaky-claudsters",
   "version": "1.0.0",
   "description": "Claude API peak/off-peak tracker with scheduling and alerts",
   "main": "dist/index.js",
