@@ -1,7 +1,7 @@
 {
   "name": "off-peaky-claudsters",
-  "version": "1.0.0",
-  "description": "Claude API peak/off-peak tracker with scheduling and alerts",
+  "version": "2.0.0",
+  "description": "Claude API peak/off-peak tracker with complete Claude integration, usage tracking, and two-terminal workflow optimization",
   "main": "dist/index.js",
   "bin": {
     "off-peaky": "bin/off-peaky.js"
@@ -15,6 +15,15 @@
     "schedule": "ts-node src/cli/schedule.ts",
     "monitor": "ts-node src/cli/monitor.ts",
     "secure-status": "ts-node src/cli/secure-status.ts",
+    "usage": "ts-node src/cli/usage.ts",
+    "claude-integration": "ts-node src/cli/claude-integration.ts",
+    "timezone-check": "ts-node src/cli/timezone-check.ts",
+    "comprehensive-timezone": "ts-node src/cli/comprehensive-timezone.ts",
+    "simple-predict": "ts-node src/cli/simple-predict.ts",
+    "simple-status": "ts-node src/cli/simple-status.ts",
+    "usage-demo": "ts-node src/cli/usage-demo.ts",
+    "export-usage": "ts-node src/cli/export-usage.ts",
+    "import-usage": "ts-node src/cli/import-usage.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -32,7 +41,14 @@
     "off-peak",
     "scheduler",
     "optimization",
-    "automation"
+    "automation",
+    "usage-tracking",
+    "claude-desktop",
+    "claude-cli",
+    "two-terminal",
+    "timezone",
+    "security",
+    "cost-optimization"
   ],
   "author": "nKOxxx",
   "license": "MIT",
@@ -65,10 +81,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nKOxxx/Off-Peaky-Claude.git"
+    "url": "https://github.com/nKOxxx/Off-Peaky-Claudsters.git"
   },
   "bugs": {
-    "url": "https://github.com/nKOxxx/Off-Peaky-Claude/issues"
+    "url": "https://github.com/nKOxxx/Off-Peaky-Claudsters/issues"
   },
-  "homepage": "https://github.com/nKOxxx/Off-Peaky-Claude#readme"
+  "homepage": "https://github.com/nKOxxx/Off-Peaky-Claudsters#readme"
 }
